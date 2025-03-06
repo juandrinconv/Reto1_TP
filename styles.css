@@ -1,0 +1,12 @@
+.card {
+    background-color: black;
+    color: white; 
+    height: 39.75px;
+}
+
+.card-body {
+    padding: 8px; 
+    box-sizing: border-box; /* Asegura que padding no exceda el ancho */
+    font-size: 0.8rem; /* Relativo al tamaño de la fuente base */
+}
+
