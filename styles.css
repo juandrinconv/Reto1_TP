@@ -16,6 +16,11 @@
   font-size: 0.8rem;
 }
 
+#fecha_modificada {
+  display: block;
+  margin: auto;
+}
+
 /* Estilos generales para el navbar */
 .custom-navbar {
   background-color: white;
