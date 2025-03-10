@@ -10,41 +10,725 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="card-body">
-        <p id="fecha_modificada"></p>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg bg-white">
-      <div class="container">
-        <img src="images/LogoTP.png" alt="Logo">
+    <div class="container-principal">
+      <div class="card">
+        <div class="card-body">
+          <p id="fecha_modificada"></p>
+        </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </div>
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid custom-container">
+          <!-- Sección Izquierda: Logo -->
+          <div class="navbar-section navbar-left">
+            <a class="navbar-brand" href="#">
+              <img src="images/LogoTP.png" alt="LogoTP" class="logo-tp" />
+            </a>
+          </div>
+
+          <!-- Sección Central: Menú -->
+          <div class="navbar-section navbar-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">WHY TP?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">INDUSTRIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">INSIGHTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CAREERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CSR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">INVESTORS</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Sección Derecha: Botón y Íconos -->
+          <div class="navbar-section navbar-right">
+            <button class="btn btn-dark contact-btn" type="button">CONTACT</button>
+            <ul class="navbar-nav icons-nav">
+              <li class="nav-item">
+                <a class="nav-link icon-circle" href="#">
+                  <i class="bi bi-globe"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon-circle" href="#">
+                  <i class="bi bi-search"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon-circle" href="#">
+                  <i class="bi bi-person-circle"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
+    </div>
 
+    <article class="container-fluid container-logo-principal">
+      <img src="images/Imagen_principal.jpeg" alt="Logo_Principal" class="logo-principal" />
+    </article>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar1">
+      <div class="navbar-center navbar-center1">
+        <ul class="navbar-nav navbar-nav1">
+          <li class="nav-item">
+            <a class="nav-link1-purple" href="#">ACERCA DE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="#">EXPERIENCIAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="#">CARRERAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="#">DIGITAL GROWTH HUB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="#">SOCIAL MEDIA EXPERTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="#">CÓDIGOS Y POLÍTICAS</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-  
 
+    <div class="container-about">
+      <div class="about-text">
+        <h2>QUIÉNES SOMOS</h2>
+        <h1>TP es la #ExperienceTech con soluciones de Analytics, Ciberseguridad, Gaming, Virtual Reality y otros que conecta a las marcas más grandes del planeta</h1>
+        <p>
+          TP es un equipo experto en servicios digitales en más de <strong>100</strong> países. Conectamos a las personas a través de soluciones de última tecnología en analytics, ciberseguridad, gaming y virtual reality. Como pioneros del modelo Work at Home en el mundo, desarrollamos soluciones tecnológicas para respaldar a las marcas más reconocidas del planeta. Solo en Colombia, somos más de <strong>40.000</strong> colaboradores en más de <strong>300</strong> ciudades y municipios; incluyendo Bogotá, Medellín y Barranquilla donde tenemos sedes presenciales.
+          <br>
+          <br>
+          TP es uno de los mayores empleadores del país y estamos certificados por Great Place To Work® y hacemos parte del Ranking de Empresas Incluyentes por el cual hemos sido certificados con el sello Friendly Biz.  
+        </p>
+        <a href="#" class="contact-button">CONTÁCTENOS</a>
+      </div>
+
+      <div id="miCarrusel" class="carousel carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img 
+              src="images/Carrusel 1.jpeg" 
+              alt="Imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img 
+              src="images/Carrusel 2.jpeg" 
+              alt="Imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img 
+              src="images/Carrusel 3.jpeg" 
+              alt="Imagen 3">
+          </div>
+        </div>
+
+        <div class="carousel-controls text-center">
+          <button 
+            class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#miCarrusel" 
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button 
+            class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#miCarrusel" 
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h2 class="text-center mb-4 h2-1">Nuestras soluciones se basan en:</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="item-container">
+            <p>Analytics</p>
+            <hr>
+          </div>
+          <div class="item-container">
+            <p>Análisis de Big Data</p>
+            <hr>
+          </div>
+          <div class="item-container">
+            <p>Cybersecurity</p>
+            <hr>
+          </div>
+          <div class="item-container">
+            <p>Actitud impulsada por el ROI</p>
+            <hr>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="item-container">
+            <p>Cloud Campus</p>
+            <hr>
+          </div>
+          <div class="item-container">
+            <p>Tecnología de alta gama</p>
+            <hr>
+          </div>
+          <div class="item-container">
+            <p>Gaming</p>
+            <hr>
+          </div>
+          <div class="item-container">
+            <p>Predicción de comportamiento del cliente</p>
+            <hr>
+          </div>
+        </div>       
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>TP es el equipo experto en servicios digitales globales.</h1>
+      <p>
+        El mundo digital nos trae retos cada vez más apasionantes, el de hoy es lograr conectarse 
+        emocionalmente con sus clientes. Con el auge de los robots, las relaciones humanas cobran 
+        más valor e importancia para sus usuarios. En TP, sabemos cómo generar experiencias excepcionales.
+      </p>
+    </div>
+    
+    <div id="miCarrusel-1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-ride="false">
+      <!-- Contenedor de "slides" -->
+      <div class="carousel-inner">
+        <!-- Slide 1 (activo) -->
+        <div class="carousel-item active">
+          <div class="cards-wrapper">
+            <!-- Tarjeta 1 -->
+            <div class="card custom-card">
+              <div class="card-body card-body-1">
+                <h5 class="card-title">Una mentalidad Six Sigma</h5>
+                <p class="card-text">
+                  Para mejorar el rendimiento, hemos alineado nuestro enfoque de alta tecnología 
+                  y alto contacto con la disciplina Lean Six Sigma.
+                </p>
+              </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="card custom-card">
+              <div class="card-body card-body-1">
+                <h5 class="card-title">La diversidad importa</h5>
+                <p class="card-text">
+                  Con el equipo más grande, altamente cualificado y multicultural, nuestra diversidad 
+                  es nuestra fuente de fortaleza que nos permite generar ideas y perspectivas frescas.
+                </p>
+              </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="card custom-card">
+              <div class="card-body card-body-1">
+                <h5 class="card-title">Datos reveladores</h5>
+                <p class="card-text">
+                  El conocimiento del comportamiento de los clientes a través de la analítica 
+                  nos permite proporcionar información significativa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <!-- Tarjeta 4 -->
+            <div class="card custom-card">
+              <div class="card-body card-body-1">
+                <h5 class="card-title">Seguridad y privacidad de los datos</h5>
+                <p class="card-text">
+                  Para proteger la seguridad de nuestros clientes, adaptamos constantemente 
+                  nuevas tecnologías, monitoreando riesgos y amenazas.
+                </p>
+              </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="card custom-card">
+              <div class="card-body card-body-1">
+                <h5 class="card-title">Relaciones de valor</h5>
+                <p class="card-text">
+                  Nos convertimos en una extensión de las marcas para crear un impacto positivo 
+                  en cada una de las soluciones que les entregamos.
+                </p>
+              </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="card custom-card">
+              <div class="card-body card-body-1">
+                <h5 class="card-title">Interactuar para mover el mundo</h5>
+                <p class="card-text">
+                  Cada interacción puede abrir oportunidades para mejorar, reconstruir y renovar 
+                  la confianza. Por eso trabajamos para marcar la diferencia en la vida de las 
+                  personas cada día.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-controls text-center">
+        <button 
+          class="carousel-control-prev carousel-control-prev-1" 
+          type="button" 
+          data-bs-target="#miCarrusel-1" 
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button 
+          class="carousel-control-next carousel-control-next-1" 
+          type="button" 
+          data-bs-target="#miCarrusel-1" 
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+    
+    <section class="transformacion-digital py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Columna Izquierda -->
+          <div class="col-md-6 texto-izquierda">
+            <h2 class="mb-3 titulo-h2">Podemos ayudarle</h2>
+            <p class="subtitulo mb-4">
+              Impulse su marca mediante la transformación digital.
+            </p>
+          </div>
+          <!-- Columna Derecha -->
+          <div class="col-md-6 contenido-derecha">
+            <ul class="lista-beneficios list-unstyled mb-0">
+              <li class="mb-3 box">
+                Haga que cada interacción sea más sencilla, rápida, mejor,
+                más segura y más rentable.
+              </li>
+              <li class="mb-3 box">
+                Ofrezca las mejores prácticas globales probadas.
+              </li>
+              <li class="mb-3 box">
+                Combine la alta tecnología y el alto nivel de contacto con la
+                disciplina Lean Six Sigma.
+              </li>
+              <li class="mb-3 box">
+                Impulse la transformación digital aprovechando la tecnología,
+                la analítica y la excelencia de los procesos.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article>
+      <h2 class="h2-tp-colombia">TP en COLOMBIA</h2>
+    </article>
+
+    <!-- Carrusel con 5 slides -->
+    <div
+      id="miCarrusel-2"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="false"  
+      >
+      <div class="carousel-inner">
+        <!-- Slide 1: imágenes 1 (lateral), 2 (principal), 3 (lateral) -->
+        <div class="carousel-item carousel-item-2 active">
+          <div class="carrusel-contenedor-imagenes">
+            <img
+              src="images/Carrusel 2-1.jpeg"
+              alt="Imagen 1"
+              class="img-small"
+            />
+            <img
+              src="images/Carrusel 2-2.jpeg"
+              alt="Imagen 2"
+              class="img-large"
+            />
+            <img
+              src="images/Carrusel 2-3.jpeg"
+              alt="Imagen 3"
+              class="img-small"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 2: imágenes 2 (lateral), 3 (principal), 4 (lateral) -->
+        <div class="carousel-item carousel-item-2">
+          <div class="carrusel-contenedor-imagenes">
+            <img
+              src="images/Carrusel 2-2.jpeg"
+              alt="Imagen 2"
+              class="img-small"
+            />
+            <img
+              src="images/Carrusel 2-3.jpeg"
+              alt="Imagen 3"
+              class="img-large"
+            />
+            <img
+              src="images/Carrusel 2-4.jpeg"
+              alt="Imagen 4"
+              class="img-small"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 3: imágenes 3 (lateral), 4 (principal), 5 (lateral) -->
+        <div class="carousel-item carousel-item-2">
+          <div class="carrusel-contenedor-imagenes">
+            <img
+              src="images/Carrusel 2-3.jpeg"
+              alt="Imagen 3"
+              class="img-small"
+            />
+            <img
+              src="images/Carrusel 2-4.jpeg"
+              alt="Imagen 4"
+              class="img-large"
+            />
+            <img
+              src="images/Carrusel 2-5.jpeg"
+              alt="Imagen 5"
+              class="img-small"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 4: imágenes 4 (lateral), 5 (principal), 1 (lateral) -->
+        <div class="carousel-item carousel-item-2">
+          <div class="carrusel-contenedor-imagenes">
+            <img
+              src="images/Carrusel 2-4.jpeg"
+              alt="Imagen 4"
+              class="img-small"
+            />
+            <img
+              src="images/Carrusel 2-5.jpeg"
+              alt="Imagen 5"
+              class="img-large"
+            />
+            <img
+              src="images/Carrusel 2-1.jpeg"
+              alt="Imagen 1"
+              class="img-small"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 5: imágenes 5 (lateral), 1 (principal), 2 (lateral) -->
+        <div class="carousel-item carousel-item-2">
+          <div class="carrusel-contenedor-imagenes">
+            <img
+              src="images/Carrusel 2-5.jpeg"
+              alt="Imagen 5"
+              class="img-small"
+            />
+            <img
+              src="images/Carrusel 2-1.jpeg"
+              alt="Imagen 1"
+              class="img-large"
+            />
+            <img
+              src="images/Carrusel 2-2.jpeg"
+              alt="Imagen 2"
+              class="img-small"
+            />
+          </div>
+        </div>
+      </div><!-- Fin .carousel-inner -->
+
+      <button 
+      class="carousel-control-prev" 
+      type="button" 
+      data-bs-target="#miCarrusel-2" 
+      data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button 
+        class="carousel-control-next" 
+        type="button" 
+        data-bs-target="#miCarrusel-2" 
+        data-bs-slide="next"
+        >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div
+    
+    <!-- Sección: Informe de Sostenibilidad -->
+    <section class="informe-sostenibilidad py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Columna Izquierda: Video de YouTube -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <!-- Ratio 16:9 de Bootstrap para hacer responsivo el iframe -->
+            <div class="ratio ratio-16x9 contenedor-video">
+              <iframe
+                src="https://www.youtube.com/embed/FnRK_cxbUSk"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Texto e información -->
+          <div class="col-md-6 texto-informe">
+            <span class="subtitulo">TP EN COLOMBIA</span>
+            <h2 class="titulo-informe">Informe de Sostenibilidad</h2>
+            <p class="descripcion-informe">
+              Te invitamos a explorar nuestras iniciativas de sostenibilidad 
+              durante 2023 en Colombia. Descubre en profundidad las acciones 
+              que hemos implementado para asegurar un entorno más sostenible, 
+              reafirmando nuestro compromiso con la mejor continua. 
+              <strong>We Never Stop Inspiring!</strong>
+            </p>
+            <a href="#" class="btn-informe">
+              INFORME COMPLETO AQUÍ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <!-- Columna Izquierda: Texto -->
+          <div class="col-md-6 text-section">
+            <h2 class="mb-4">
+              Las compañías más grandes y reconocidas del mundo confían en nosotros
+            </h2>
+            <p class="mb-0">
+              Desarrollamos el talento para conectar a las marcas con sus clientes.
+              Aseguramos el éxito de nuestros procesos y nos esforzamos siempre en
+              fortalecer la cotidianidad de las personas.
+            </p>
+          </div>
+          
+          <!-- Columna Derecha: Formulario -->
+          <div class="col-md-6 mt-5 mt-md-0 form-section">
+            <div class="form-container">
+              <!-- Encabezado con degradado -->
+              <div class="form-header">
+                <h3>Contacto</h3>
+              </div>
+              
+              <!-- Formulario -->
+              <form>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label">Nombre*</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="nombre" 
+                      placeholder="Nombre" 
+                      required 
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="apellido" class="form-label">Apellido*</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="apellido" 
+                      placeholder="Apellido" 
+                      required 
+                    />
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="correo" class="form-label">Correo electrónico*</label>
+                    <input 
+                      type="email" 
+                      class="form-control" 
+                      id="correo" 
+                      placeholder="Correo electrónico" 
+                      required 
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="empresa" class="form-label">Empresa*</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="empresa" 
+                      placeholder="Empresa" 
+                      required 
+                    />
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="telefono" class="form-label">Phone number*</label>
+                    <input 
+                      type="tel" 
+                      class="form-control" 
+                      id="telefono" 
+                      placeholder="Phone number" 
+                      required 
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="pais" class="form-label">País*</label>
+                    <select class="form-select" id="pais" required>
+                      <option value="">Seleccione un país</option>
+                      <option value="co">Colombia</option>
+                      <option value="mx">México</option>
+                      <option value="pe">Perú</option>
+                      <!-- Agrega más opciones si lo deseas -->
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="industria" class="form-label">Industry*</label>
+                    <select class="form-select" id="industria" required>
+                      <option value="">Seleccione una industria</option>
+                      <option value="tech">Tecnología</option>
+                      <option value="fintech">Fintech</option>
+                      <option value="telecom">Telecom</option>
+                      <!-- Agrega más opciones si lo deseas -->
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="ciudad" class="form-label">Ciudad / País</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="ciudad" 
+                      placeholder="Ciudad / País" 
+                    />
+                  </div>
+                </div>
+                
+                <!-- Checkbox de aceptación de términos -->
+                <div class="mb-3 form-check">
+                  <input 
+                    type="checkbox" 
+                    class="form-check-input" 
+                    id="terminos" 
+                    required 
+                  />
+                  <label class="form-check-label" for="terminos">
+                    Acepto los términos y condiciones
+                  </label>
+                </div>
+                
+                <!-- Botón de envío -->
+                <button type="submit" class="btn-submit">ENVIARNOS</button>
+              </form>
+            </div>
+          </div>
+          
+        </div><!-- row -->
+      </div><!-- container -->
+    </section>
+    
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-2">
+                  <img src="images/Logo-tp-modificado.png" alt="Logo-TP">
+                  <h5>Seleccione temas y manténgase al día de nuestras últimas novedades.</h5>
+                  <button type="submit" class="boton-final btn-submit">Subscribase a</button>
+              </div>
+              <div class="col-md-2">
+                  <h5>USEFUL LINKS</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">ABOUT TP</a></li>
+                      <li><a href="#">INVESTORS HOMEPAGE</a></li>
+                      <li><a href="#">OUR VISION</a></li>
+                      <li><a href="#">CONTACTO</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h5>SERVICES</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">DIGITAL CX</a></li>
+                      <li><a href="#">ARTIFICIAL INTELLIGENCE</a></li>
+                      <li><a href="#">TRUST AND SAFETY</a></li>
+                      <li><a href="#">BACK-OFFICE PROCESSING</a></li>
+                      <li><a href="#">INTERPRETATION AND TRANSLATION</a></li>
+                      <li><a href="#">WORK-AT-HOME</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h5>INDUSTRIES</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">HEALTHCARE</a></li>
+                      <li><a href="#">BANKING AND FINANCIAL SERVICES</a></li>
+                      <li><a href="#">TRAVEL, HOSPITALITY, AND CARGO</a></li>
+                      <li><a href="#">VIDEO GAMES</a></li>
+                      <li><a href="#">RETAIL AND E-COMMERCE</a></li>
+                      <li><a href="#">AUTOMOTIVE</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-2">
+                  <h5>CAREERS</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">CHOOSE TP</a></li>
+                      <li><a href="#">JOB OPPORTUNITIES</a></li>
+                      <li><a href="#">WORK-FROM-HOME OPPORTUNITY</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 text-center">
+                  <p>protegido por reCAPTCHA</p>
+                  <p><a href="#">Contiguración de cookies</a> | <a href="#">Privacy Codes and Policies</a> | <a href="#">Legal Statement</a> | <a href="#">Global Ethics Hotline</a></p>
+                  <p>Síguenos</p>
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+              </div>
+          </div>
+      </div>
+  </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -53,3 +737,4 @@
     <script src="js.js"></script>
   </body>
 </html>
+
